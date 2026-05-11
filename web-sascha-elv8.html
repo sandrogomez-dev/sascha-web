@@ -683,12 +683,18 @@
     /* ─── RESPONSIVE ─── */
     @media (max-width: 1024px) {
       nav { padding: 0 32px; }
+      .nav-links { display: none; }
       #hero { grid-template-columns: 1fr; padding: 100px 32px 60px; text-align: center; }
       .ig-card { max-width: 100%; }
+      .hero-subtitle { max-width: 100%; }
+      .hero-cta-group { justify-content: center; }
+      .hero-location { justify-content: center; }
       #about { grid-template-columns: 1fr; padding: 60px 32px; gap: 48px; }
       .about-img-wrap { order: -1; max-width: 360px; margin: 0 auto; }
+      .about-img-overlay { left: 0; right: 0; }
       .services-grid { grid-template-columns: 1fr; }
       .rudiger-inner { grid-template-columns: 1fr; }
+      .rudiger-img-side { min-height: 360px; }
       .rudiger-text { padding: 48px 32px; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
       .gallery-item.featured { grid-column: span 2; grid-row: span 1; }
@@ -696,19 +702,33 @@
       .metric-item:nth-child(2) { border-right: none; }
       .metric-item:nth-child(3) { border-top: 1px solid rgba(0,0,0,0.15); }
       section { padding: 60px 32px; }
+      #contact { padding: 60px 32px; }
+      .contact-press { flex-direction: column; text-align: center; }
       footer { padding: 32px; flex-direction: column; text-align: center; }
       .footer-links { flex-wrap: wrap; justify-content: center; }
-      .nav-links { display: none; }
-      .contact-press { flex-direction: column; text-align: center; }
     }
     @media (max-width: 600px) {
-      #hero { padding: 90px 20px 48px; gap: 40px; }
+      nav { padding: 0 20px; }
+      .nav-logo span { display: none; }
+      #hero { padding: 80px 20px 48px; gap: 32px; }
+      .ig-card { padding: 20px; }
+      .ig-name-block h3 { font-size: 15px; }
+      .rudiger-img-side { min-height: 280px; }
+      .rudiger-text { padding: 36px 20px; }
+      .rudiger-specs { grid-template-columns: 1fr 1fr; gap: 12px; }
       .gallery-grid { grid-template-columns: 1fr; }
       .gallery-item.featured { grid-column: span 1; }
+      .gallery-item img { min-height: 220px; }
       .metrics-inner { grid-template-columns: 1fr 1fr; }
-      .rudiger-specs { grid-template-columns: 1fr; }
+      .metric-num { font-size: 38px; }
+      .metric-item { padding: 24px 12px; }
       section { padding: 48px 20px; }
-      .ig-card { padding: 20px; }
+      #contact { padding: 48px 20px; }
+      .contact-press { width: 100%; }
+      .contact-cta-group { flex-direction: column; align-items: center; }
+      .btn-primary, .btn-ig { width: 100%; text-align: center; justify-content: center; }
+      footer { padding: 24px 20px; }
+      .footer-links { gap: 20px; }
     }
   </style>
 </head>
